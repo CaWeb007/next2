@@ -1,0 +1,23 @@
+.topMenu
+  position: fixed
+  height: 60px
+  left: 0
+  top: 0
+  right: 0
+  background: darkblue
+  display: flex
+  justify-content: space-around
+  align-items: center
+  a
+    color: #fff
+    text-decoration: none
+  &.disable
+    width: 100%
+    background: linear-gradient(90deg, #acacac, #acacac, #dedede, #acacac, #acacac)
+    background-size: 400% 400%
+    animation: gradient 2s ease infinite
+    transform: translate3d(0, 0, 0)
+@keyframes gradient
+  100%
+    background-position: 100% 100%
+
