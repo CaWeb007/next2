@@ -1,6 +1,7 @@
 export interface TopMenu {
     topMenuSections: {
-        sort: number,
-        title: string
+        link: string,
+        title: string,
+        id: number
     }
 }

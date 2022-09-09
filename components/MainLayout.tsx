@@ -1,13 +1,14 @@
-import Link from "next/link";
-import Head from "next/head";
-import {TopMenu} from "./TopMenu";
+import Link from "next/link"
+import Head from "next/head"
+import {TopMenu} from "./TopMenu"
+import {Container} from "react-bootstrap";
 
 export function MainLayout({children, title = 'Next App'}){
-    const titlePage = `Next - ${title}`
+    const themePrefixes = {"nav": "prefixes"}
     return(
         <>
             <Head>
-                <title>{titlePage}</title>
+                <title>{title}</title>
             </Head>
             <TopMenu/>
             <main>
